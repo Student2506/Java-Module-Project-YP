@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
         System.out.println("На сколько человек разделить счёт?:");
         int peopleCount;
@@ -36,7 +37,7 @@ public class Main {
                 Locale.US,
                 "%.2f %s%n",
                 averagePerPerson,
-                Formatter.conjugate((int)Math.floor(averagePerPerson))
+                Formatter.conjugate((int) Math.floor(averagePerPerson))
         );
     }
 }
