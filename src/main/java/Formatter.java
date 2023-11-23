@@ -1,6 +1,7 @@
+
 public class Formatter {
     public static String conjugate(int count) {
-        if (11 <= count && count <= 19) {
+        if (count % 100 >= 11 && count % 100 <= 19) {
             return "рублей";
         }
         return switch (count % 10) {
