@@ -5,7 +5,7 @@ public class Calculator {
 
     private String goods;
     private Double totalCost;
-    private int count;
+    private final int count;
 
     Calculator(int count) {
         this.count = count;
