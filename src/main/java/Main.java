@@ -17,7 +17,9 @@ public class Main {
             System.out.println("Введите целое положительное число больше 1: ");
             try {
                 peopleCount = scanner.nextInt();
-            } catch (InputMismatchException ignored) {}
+            } catch (InputMismatchException ignored) {
+                peopleCount = -1;
+            }
         }
 
         Calculator calculator = new Calculator(peopleCount);

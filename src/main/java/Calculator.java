@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Calculator {
     private static final Scanner scanner = new Scanner(System.in);
 
-    String goods;
-    Double totalCost;
-    int count;
+    private String goods;
+    private Double totalCost;
+    private int count;
 
     Calculator(int count) {
         this.count = count;
@@ -25,7 +25,9 @@ public class Calculator {
             temp_cost = temp_cost.replace(',', '.');
             try {
                 cost = Double.parseDouble(temp_cost);
-            } catch (NumberFormatException ignored) {}
+            } catch (NumberFormatException ignored) {
+                System.out.println("Не верно введено значение цены.");
+            }
         }
         this.goods += product + "\n";
         this.totalCost += cost;
