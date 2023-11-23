@@ -26,7 +26,7 @@ public class Calculator {
             try {
                 cost = Double.parseDouble(temp_cost);
             } catch (NumberFormatException ignored) {
-                System.out.println("Не верно введено значение цены.");
+                System.out.println("Не верно введено значение цены. Не удалось добавить товар.");
             }
         }
         this.goods += product + "\n";
